@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Networking | Stinger Solutions LLC</title>
+<meta name="description" content="Open-source router and wired mesh networking from Stinger Solutions, built on GL.iNet/OpenWrt — with an honest fallback to self-hosted UniFi for wireless mesh.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,3 93,25 93,75 50,97 7,75 7,25' fill='%230b0f17' stroke='%23f5a623' stroke-width='5'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23f5a623'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="skip-link"><a href="#main">Skip to content</a></div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Stinger Solutions home">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon points="50,3 93,25 93,75 50,97 7,75 7,25" fill="none" stroke="currentColor" stroke-width="6"/>
+        <circle cx="50" cy="50" r="9" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">STINGER<span class="brand-sub">SOLUTIONS</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+
+      <div class="nav-item has-dropdown">
+        <button type="button" class="dropdown-toggle" id="servicesToggle" aria-haspopup="true" aria-expanded="false" aria-controls="servicesDropdown">
+          Services
+          <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-panel" id="servicesDropdown">
+          <div class="dropdown-panel-inner">
+            <div class="dropdown-col">
+              <p class="dropdown-heading">Hardware</p>
+              <a href="home-server-systems.html">Home Server Systems</a>
+              <a href="camera-security.html">Camera &amp; Security</a>
+              <a href="networking.html">Networking</a>
+              <a href="maintenance-plans.html">Maintenance Plans</a>
+            </div>
+            <div class="dropdown-col">
+              <p class="dropdown-heading">Software</p>
+              <a href="custom-software.html">Custom Software Development</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="wrap page-hero-inner">
+      <p class="eyebrow">Hardware</p>
+      <h1>Networking</h1>
+      <p>The network is the foundation everything else runs on. We default to open hardware you fully control — and we're upfront about where that approach has real limits.</p>
+      <a href="services.html" class="link-arrow back-link">&larr; All services</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTENT ============ -->
+  <section class="services">
+    <div class="wrap">
+
+      <div class="info-cards single-col">
+        <div class="info-card">
+          <h4>Default: open-source router + wired access points</h4>
+          <p>We build on <strong>GL.iNet</strong> hardware (the Flint family) — built on OpenWrt, no cloud account required, WireGuard/OpenVPN built in, full root/SSH access if you want it. One Flint unit covers most single-router homes.</p>
+          <p>For homes that need multiple access points, we add additional GL.iNet units in AP mode over wired backhaul, with roaming configured manually using 802.11k/v/r fast-roaming standards.</p>
+          <p><strong>Worth knowing:</strong> GL.iNet doesn't yet offer plug-and-play mesh — there's no "add a node in an app" step. We configure roaming professionally as part of install, but we won't market it as consumer mesh, because it isn't.</p>
+        </div>
+        <div class="info-card alt">
+          <h4>Fallback: self-hosted UniFi mesh</h4>
+          <p>If your home layout makes wired backhaul impractical — finished walls, a detached garage or shop — or you specifically want zero-touch wireless mesh roaming, we'll build on a self-hosted UniFi controller instead. No mandatory cloud dependency, but closed-source and locked to UniFi hardware.</p>
+          <p>This is genuinely the only option in our lineup for true wireless-backhaul mesh, and we'd rather tell you that upfront than oversell GL.iNet roaming as something it isn't.</p>
+        </div>
+        <div class="info-card">
+          <h4>What we don't install as standard</h4>
+          <p>We steer away from consumer mesh systems like TP-Link Deco — closed firmware, mandatory cloud account binding at setup, and a track record of security issues. It just doesn't fit a business built around hardware you fully control.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Not sure which setup fits your home?</h2>
+      <p>Tell us about your layout and we'll recommend wired or mesh.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon points="50,3 93,25 93,75 50,97 7,75 7,25" fill="none" stroke="currentColor" stroke-width="6"/>
+        <circle cx="50" cy="50" r="9" fill="currentColor"/>
+      </svg>
+      <div>
+        <p class="footer-name">Stinger Solutions LLC</p>
+        <p class="footer-tag">Own your tech.</p>
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; <span id="year"></span> Stinger Solutions LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

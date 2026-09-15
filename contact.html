@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Stinger Solutions LLC</title>
+<meta name="description" content="Get in touch with Stinger Solutions about a home server system, camera & security install, networking, custom software, or a maintenance plan.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,3 93,25 93,75 50,97 7,75 7,25' fill='%230b0f17' stroke='%23f5a623' stroke-width='5'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23f5a623'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="skip-link"><a href="#main">Skip to content</a></div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Stinger Solutions home">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon points="50,3 93,25 93,75 50,97 7,75 7,25" fill="none" stroke="currentColor" stroke-width="6"/>
+        <circle cx="50" cy="50" r="9" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">STINGER<span class="brand-sub">SOLUTIONS</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+
+      <div class="nav-item has-dropdown">
+        <button type="button" class="dropdown-toggle" id="servicesToggle" aria-haspopup="true" aria-expanded="false" aria-controls="servicesDropdown">
+          Services
+          <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-panel" id="servicesDropdown">
+          <div class="dropdown-panel-inner">
+            <div class="dropdown-col">
+              <p class="dropdown-heading">Hardware</p>
+              <a href="home-server-systems.html">Home Server Systems</a>
+              <a href="camera-security.html">Camera &amp; Security</a>
+              <a href="networking.html">Networking</a>
+              <a href="maintenance-plans.html">Maintenance Plans</a>
+            </div>
+            <div class="dropdown-col">
+              <p class="dropdown-heading">Software</p>
+              <a href="custom-software.html">Custom Software Development</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="wrap page-hero-inner">
+      <p class="eyebrow">Get in touch</p>
+      <h1>Let's talk about your system.</h1>
+      <p>Whether you know exactly which tier you want or you're not sure where to start, tell us a bit about your home and we'll follow up to schedule a walkthrough or a discovery call.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact">
+    <div class="wrap contact-inner">
+      <div class="contact-copy">
+        <ul class="contact-details">
+          <li><span class="cd-label">Email</span><a href="mailto:stingersolutionsdev@gmail.com?subject=Website%20inquiry">stingersolutionsdev@gmail.com</a></li>
+          <li><span class="cd-label">Service area</span><span>Tri-Cities, TN (Johnson City, Kingsport, Bristol, Jonesborough) &mdash; remote for custom software</span></li>
+          <li><span class="cd-label">Response time</span><span>Usually within 1 business day</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone <span class="optional">(optional)</span></label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <label for="interest">I'm interested in</label>
+          <select id="interest" name="interest">
+            <option>Home Server System</option>
+            <option>Camera &amp; Security</option>
+            <option>Networking</option>
+            <option>Custom Software</option>
+            <option>Maintenance Plan</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your home, your household, and what's prompting the project."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon points="50,3 93,25 93,75 50,97 7,75 7,25" fill="none" stroke="currentColor" stroke-width="6"/>
+        <circle cx="50" cy="50" r="9" fill="currentColor"/>
+      </svg>
+      <div>
+        <p class="footer-name">Stinger Solutions LLC</p>
+        <p class="footer-tag">Own your tech.</p>
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; <span id="year"></span> Stinger Solutions LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

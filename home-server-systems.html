@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Server Systems | Stinger Solutions LLC</title>
+<meta name="description" content="Fixed-price home server tiers from Stinger Solutions — Nextcloud, Immich, Jellyfin, VPN access, and ad blocking on hardware you own outright.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,3 93,25 93,75 50,97 7,75 7,25' fill='%230b0f17' stroke='%23f5a623' stroke-width='5'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23f5a623'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="skip-link"><a href="#main">Skip to content</a></div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Stinger Solutions home">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon points="50,3 93,25 93,75 50,97 7,75 7,25" fill="none" stroke="currentColor" stroke-width="6"/>
+        <circle cx="50" cy="50" r="9" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">STINGER<span class="brand-sub">SOLUTIONS</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+
+      <div class="nav-item has-dropdown">
+        <button type="button" class="dropdown-toggle" id="servicesToggle" aria-haspopup="true" aria-expanded="false" aria-controls="servicesDropdown">
+          Services
+          <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-panel" id="servicesDropdown">
+          <div class="dropdown-panel-inner">
+            <div class="dropdown-col">
+              <p class="dropdown-heading">Hardware</p>
+              <a href="home-server-systems.html">Home Server Systems</a>
+              <a href="camera-security.html">Camera &amp; Security</a>
+              <a href="networking.html">Networking</a>
+              <a href="maintenance-plans.html">Maintenance Plans</a>
+            </div>
+            <div class="dropdown-col">
+              <p class="dropdown-heading">Software</p>
+              <a href="custom-software.html">Custom Software Development</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="wrap page-hero-inner">
+      <p class="eyebrow">Hardware</p>
+      <h1>Home Server Systems</h1>
+      <p>One small, quiet box in a closet runs your files, photos, media, and smart home — replacing half a dozen monthly subscriptions with a system you actually own.</p>
+      <a href="services.html" class="link-arrow back-link">&larr; All services</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTENT ============ -->
+  <section class="services">
+    <div class="wrap">
+
+      <div class="tier-grid">
+        <article class="tier-card">
+          <h3>Starter</h3>
+          <p class="tier-target">Single person or couple, light use</p>
+          <p class="tier-price">$1,400&ndash;1,500</p>
+          <ul class="tier-specs">
+            <li>N100 mini PC · 16GB RAM · 500GB SSD</li>
+            <li>2-bay Synology NAS, 4TB HDD (Expandable)</li>
+            <li>VPN access (Tailscale/WireGuard)</li>
+            <li>Network-wide ad &amp; tracker blocking</li>
+            <li>Nextcloud (see below) Data Backup</li>
+            <li>Immich (see below) for 1&ndash;2 phones</li>
+            <li>Basic UPS (graceful shutdown)</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline btn-block">Ask About This Tier</a>
+        </article>
+
+        <article class="tier-card featured">
+          <span class="tier-badge">Most popular</span>
+          <h3>Standard</h3>
+          <p class="tier-target">Family, multiple users, some cameras/media</p>
+          <p class="tier-price">$3,000&ndash;3,200</p>
+          <ul class="tier-specs">
+            <li>Ryzen 9 mini PC · 32GB RAM · 2TB SSD</li>
+            <li>4-bay Synology NAS, 8TB HDD (Expandable)</li>
+            <li>VPN access (Tailscale/WireGuard)</li>
+            <li>Network-wide ad &amp; tracker blocking</li>
+            <li>Nextcloud (see below) Data Backup</li>
+            <li>Immich (see below), whole family, face recognition</li>
+            <li>Jellyfin (see below) media server</li>
+            <li>Mid UPS (~30&ndash;60 min runtime)</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary btn-block">Ask About This Tier</a>
+        </article>
+
+        <article class="tier-card">
+          <h3>Prosumer</h3>
+          <p class="tier-target">Power users, large media libraries, heavy household use</p>
+          <p class="tier-price">$4,500&ndash;5,000</p>
+          <ul class="tier-specs">
+            <li>Intel i9 mini PC · 64GB RAM · Dual 10GbE</li>
+            <li>4 bay Synology NAS, 16TB HDD (Expandable)</li>
+            <li>VPN access (Tailscale/WireGuard)</li>
+            <li>Network-wide ad &amp; tracker blocking</li>
+            <li>Nextcloud (see below) Data Backup</li>
+            <li>Immich (see below), whole family, larger library</li>
+            <li>Jellyfin (see below)  media server</li>
+            <li>Large UPS / battery bank option</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline btn-block">Ask About This Tier</a>
+        </article>
+      </div>
+
+      <p class="tier-footnote">Price includes shop pre-configuration, on-site install, network integration, device pairing, and a walkthrough so your whole household knows how to use it.</p>
+
+      <div class="whats-inside">
+        <h3>What's actually in the box</h3>
+        <div class="inside-grid">
+          <div class="inside-item"><h4>Your Server</h4><p>One small, quiet box that runs everything below. No monthly cloud fees.</p></div>
+          <div class="inside-item"><h4>NAS / Storage</h4><p>Redundant drives so a single hard drive failure doesn't lose your data.</p></div>
+          <div class="inside-item"><h4>VPN Access</h4><p>Securely reach your files and photos from anywhere without exposing your home network to the internet.</p></div>
+          <div class="inside-item"><h4>Ad/Tracker Blocking</h4><p>Blocks ads and tracking network-wide, on every device automatically.</p></div>
+          <div class="inside-item"><h4>Nextcloud</h4><p>Your own private Dropbox / Google Drive. Files sync across phone, laptop, desktop.</p></div>
+          <div class="inside-item"><h4>Immich</h4><p>Your own private Google Photos. Auto-backs up photos from every phone in the house.</p></div>
+          <div class="inside-item"><h4>Jellyfin</h4><p>Your own private Netflix for the movies, shows, and music you already own.</p></div>
+        </div>
+      </div>
+
+      <div class="addon-box">
+        <h3>Add-ons</h3>
+        <div class="addon-grid">
+          <div class="addon"><h4>Monthly Maintenance Plan</h4><p>$30&ndash;75/mo — updates, backup verification, health checks.</p></div>
+          <div class="addon"><h4>Grid-Down Resilience Package</h4><p>Extended battery / solar UPS, sized to your load.</p></div>
+          <div class="addon"><h4>External Access (No-VPN)</h4><p>$150&ndash;250 one-time. DDNS + real HTTPS certs + Fail2ban/CrowdSec + forced 2FA + geo-blocking.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Not sure which tier fits your home?</h2>
+      <p>Tell us about your household and we'll help you figure out where to start.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon points="50,3 93,25 93,75 50,97 7,75 7,25" fill="none" stroke="currentColor" stroke-width="6"/>
+        <circle cx="50" cy="50" r="9" fill="currentColor"/>
+      </svg>
+      <div>
+        <p class="footer-name">Stinger Solutions LLC</p>
+        <p class="footer-tag">Own your tech.</p>
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; <span id="year"></span> Stinger Solutions LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
