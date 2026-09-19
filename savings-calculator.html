@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savings Calculator | Stinger Solutions LLC</title>
+<meta name="description" content="See how much your household is paying for cloud photo storage, file sync, camera cloud storage, VPN, and backup subscriptions — and how many months it takes a self-hosted Stinger system to pay for itself.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,3 93,25 93,75 50,97 7,75 7,25' fill='%230b0f17' stroke='%23f5a623' stroke-width='5'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23f5a623'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="skip-link"><a href="#main">Skip to content</a></div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Stinger Solutions home">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon points="50,3 93,25 93,75 50,97 7,75 7,25" fill="none" stroke="currentColor" stroke-width="6"/>
+        <circle cx="50" cy="50" r="9" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">STINGER<span class="brand-sub">SOLUTIONS</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+
+      <div class="nav-item has-dropdown">
+        <button type="button" class="dropdown-toggle" id="servicesToggle" aria-haspopup="true" aria-expanded="false" aria-controls="servicesDropdown">
+          Services
+          <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-panel" id="servicesDropdown">
+          <div class="dropdown-panel-inner">
+            <div class="dropdown-col">
+              <p class="dropdown-heading">Hardware</p>
+              <a href="home-server-systems.html">Home Server Systems</a>
+              <a href="camera-security.html">Camera &amp; Security</a>
+              <!-- <a href="networking.html">Networking</a> -->
+              <a href="maintenance-plans.html">Maintenance Plans</a>
+            </div>
+            <div class="dropdown-col">
+              <p class="dropdown-heading">Software</p>
+              <a href="custom-software.html">Custom Software Development</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="savings-calculator.html">Savings Calculator</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="wrap page-hero-inner">
+      <p class="eyebrow">Tools</p>
+      <h1>Savings Calculator</h1>
+      <p>Check off what you're currently paying for, adjust the prices to match your real bills, then pick a Stinger system to see how many months it takes to pay for itself.</p>
+      <a href="index.html" class="link-arrow back-link">&larr; Back to home</a>
+    </div>
+  </section>
+
+  <!-- ============ CALCULATOR ============ -->
+  <section class="services">
+    <div class="wrap">
+      <div class="calc-grid">
+
+        <div class="calc-form">
+
+          <div class="calc-fieldset">
+            <h3>1. What are you currently paying for?</h3>
+            <p class="calc-fieldset-sub">Defaults are typical market rates &mdash; edit any price to match your actual bill.</p>
+
+            <div class="calc-item">
+              <label class="calc-check">
+                <input type="checkbox" class="calc-sub-check" checked data-name="Cloud photo &amp; video backup">
+                <span>
+                  <strong>Cloud photo &amp; video backup</strong>
+                  <small>Google One, iCloud+ &mdash; replaced by Immich</small>
+                </span>
+              </label>
+              <div class="calc-price">
+                <span>$</span>
+                <input type="number" class="calc-sub-price" value="9.99" min="0" step="0.01" inputmode="decimal" aria-label="Monthly cost for cloud photo and video backup">
+                <span class="calc-per">/mo</span>
+              </div>
+            </div>
+
+            <div class="calc-item">
+              <label class="calc-check">
+                <input type="checkbox" class="calc-sub-check" checked data-name="Cloud file storage &amp; sync">
+                <span>
+                  <strong>Cloud file storage &amp; sync</strong>
+                  <small>Dropbox, Google Drive &mdash; replaced by Nextcloud</small>
+                </span>
+              </label>
+              <div class="calc-price">
+                <span>$</span>
+                <input type="number" class="calc-sub-price" value="11.99" min="0" step="0.01" inputmode="decimal" aria-label="Monthly cost for cloud file storage and sync">
+                <span class="calc-per">/mo</span>
+              </div>
+            </div>
+
+            <div class="calc-item">
+              <label class="calc-check">
+                <input type="checkbox" class="calc-sub-check" checked data-name="Camera cloud storage">
+                <span>
+                  <strong>Camera cloud storage</strong>
+                  <small>Ring Protect, Nest Aware, Arlo Secure &mdash; replaced by Frigate</small>
+                </span>
+              </label>
+              <div class="calc-price">
+                <span>$</span>
+                <input type="number" class="calc-sub-price" value="10.00" min="0" step="0.01" inputmode="decimal" aria-label="Monthly cost for camera cloud storage">
+                <span class="calc-per">/mo</span>
+              </div>
+            </div>
+
+            <div class="calc-item">
+              <label class="calc-check">
+                <input type="checkbox" class="calc-sub-check" checked data-name="VPN service">
+                <span>
+                  <strong>VPN service</strong>
+                  <small>NordVPN, ExpressVPN, Surfshark &mdash; replaced by Tailscale/WireGuard</small>
+                </span>
+              </label>
+              <div class="calc-price">
+                <span>$</span>
+                <input type="number" class="calc-sub-price" value="12.00" min="0" step="0.01" inputmode="decimal" aria-label="Monthly cost for VPN service">
+                <span class="calc-per">/mo</span>
+              </div>
+            </div>
+            
+            <div class="calc-item">
+              <label class="calc-check">
+                <input type="checkbox" class="calc-sub-check" data-name="Music streaming service">
+                <span>
+                  <strong>Music streaming service</strong>
+                  <small>Spotify, YouTube Music, Apple Music &mdash; replaced by Navidrome</small>
+                </span>
+              </label>
+              <div class="calc-price">
+                <span>$</span>
+                <input type="number" class="calc-sub-price" value="10.99" min="0" step="0.01" inputmode="decimal" aria-label="Monthly cost for music streaming service">
+                <span class="calc-per">/mo</span>
+              </div>
+            </div>
+
+            <div class="calc-item">
+              <label class="calc-check">
+                <input type="checkbox" class="calc-sub-check" data-name="Cloud backup service">
+                <span>
+                  <strong>Cloud backup service</strong>
+                  <small>Backblaze, Carbonite &mdash; replaced by your NAS</small>
+                </span>
+              </label>
+              <div class="calc-price">
+                <span>$</span>
+                <input type="number" class="calc-sub-price" value="9.00" min="0" step="0.01" inputmode="decimal" aria-label="Monthly cost for cloud backup service">
+                <span class="calc-per">/mo</span>
+              </div>
+            </div>
+
+            <div class="calc-item">
+              <label class="calc-check">
+                <input type="checkbox" class="calc-sub-check" data-name="DNS / ad-blocking service">
+                <span>
+                  <strong>DNS / ad-blocking service</strong>
+                  <small>NextDNS Pro, AdGuard Premium &mdash; replaced by Pi-hole</small>
+                </span>
+              </label>
+              <div class="calc-price">
+                <span>$</span>
+                <input type="number" class="calc-sub-price" value="2.00" min="0" step="0.01" inputmode="decimal" aria-label="Monthly cost for DNS or ad-blocking service">
+                <span class="calc-per">/mo</span>
+              </div>
+            </div>
+
+            <div class="calc-item calc-item-custom">
+              <label class="calc-check">
+                <input type="checkbox" class="calc-sub-check" id="calcCustomCheck">
+                <span>
+                  <input type="text" class="calc-custom-name" placeholder="Another subscription&hellip;" aria-label="Custom subscription name" data-name="Other subscription">
+                </span>
+              </label>
+              <div class="calc-price">
+                <span>$</span>
+                <input type="number" class="calc-sub-price" value="0" min="0" step="0.01" inputmode="decimal" aria-label="Monthly cost for other subscription">
+                <span class="calc-per">/mo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-fieldset">
+            <h3>2. Which Stinger system are you comparing against?</h3>
+            <p class="calc-fieldset-sub">One-time hardware cost, installed &mdash; no recurring fee required.</p>
+
+            <div class="calc-tiers">
+              <label class="calc-tier">
+                <input type="radio" name="calcTier" class="calc-tier-radio" value="1400" checked>
+                <span class="calc-tier-name">Starter</span>
+                <span class="calc-tier-price">$1,400</span>
+              </label>
+              <label class="calc-tier">
+                <input type="radio" name="calcTier" class="calc-tier-radio" value="3000">
+                <span class="calc-tier-name">Standard</span>
+                <span class="calc-tier-price">$3,000</span>
+              </label>
+              <label class="calc-tier">
+                <input type="radio" name="calcTier" class="calc-tier-radio" value="4500">
+                <span class="calc-tier-name">Prosumer</span>
+                <span class="calc-tier-price">$4,500</span>
+              </label>
+              <label class="calc-tier calc-tier-custom">
+                <input type="radio" name="calcTier" class="calc-tier-radio" value="custom">
+                <span class="calc-tier-name">Custom</span>
+                <span class="calc-tier-price calc-tier-price-custom">
+                  $<input type="number" id="calcCustomTierPrice" value="3000" min="0" step="50" aria-label="Custom one-time system cost">
+                </span>
+              </label>
+            </div>
+
+            <label class="calc-check calc-maint-check">
+              <input type="checkbox" id="calcMaintCheck">
+              <span>
+                <strong>Include a monthly maintenance and support plan</strong>
+                <small>Updates, backup verification, health checks</small>
+              </span>
+              <div class="calc-price">
+                <span>$</span>
+                <input type="number" id="calcMaintPrice" value="50" min="0" step="1" aria-label="Monthly maintenance plan cost">
+                <span class="calc-per">/mo</span>
+              </div>
+            </label>
+          </div>
+
+        </div>
+
+        <aside class="calc-summary">
+          <div class="calc-summary-inner">
+            <p class="calc-summary-label">Right now, you're paying</p>
+            <p class="calc-summary-big"><span id="calcMonthlyTotal">$0</span><span class="calc-summary-unit">/mo</span></p>
+            <p class="calc-summary-sub"><span id="calcAnnualTotal">$0</span>/yr in subscriptions</p>
+
+            <div class="calc-summary-divider"></div>
+
+            <div class="calc-bars" aria-hidden="true">
+              <div class="calc-bar-row">
+                <span class="calc-bar-label">Keep subscribing (5 yrs)</span>
+                <div class="calc-bar-track"><div class="calc-bar-fill calc-bar-sub" id="calcBarSub" style="width:0%"></div></div>
+                <span class="calc-bar-value" id="calcBarSubValue">$0</span>
+              </div>
+              <div class="calc-bar-row">
+                <span class="calc-bar-label">Self-host with Stinger (5 yrs)</span>
+                <div class="calc-bar-track"><div class="calc-bar-fill calc-bar-stinger" id="calcBarStinger" style="width:0%"></div></div>
+                <span class="calc-bar-value" id="calcBarStingerValue">$0</span>
+              </div>
+            </div>
+
+            <div class="calc-summary-divider"></div>
+
+            <div class="calc-result-row">
+              <span>Break-even point</span>
+              <strong id="calcBreakeven">&mdash;</strong>
+            </div>
+            <div class="calc-result-row calc-result-highlight">
+              <span>5-year savings</span>
+              <strong id="calcFiveYearSavings">$0</strong>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary btn-block calc-summary-cta">Get a Quote</a>
+            <p class="calc-disclaimer">Estimates only, based on typical market prices for these services. Edit any field above to match your real bills for a more accurate picture.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Ready to stop paying for access to your own data?</h2>
+      <p>Tell us about your home and we'll help you pick the right system.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon points="50,3 93,25 93,75 50,97 7,75 7,25" fill="none" stroke="currentColor" stroke-width="6"/>
+        <circle cx="50" cy="50" r="9" fill="currentColor"/>
+      </svg>
+      <div>
+        <p class="footer-name">Stinger Solutions LLC</p>
+        <p class="footer-tag">Own your tech.</p>
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="services.html">Services</a>
+      <a href="savings-calculator.html">Savings Calculator</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; <span id="year"></span> Stinger Solutions LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/calculator.js"></script>
+</body>
+</html>
